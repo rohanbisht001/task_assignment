@@ -1,0 +1,11 @@
+<div *ngIf="task" class="task" [ngClass]="{reminder: task.reminder}" (dblclick)="taskReminder(task)">
+
+  <h3>
+    {{task.text}}
+    <button type="button" class="btn btn-info" (click)="onDelete(task)">BUY</button><br>
+  </h3>
+
+  <p>{{task.day}}</p>
+
+
+</div>
